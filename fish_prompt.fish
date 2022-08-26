@@ -15,8 +15,9 @@ function _secho_prompt
   end
 
   echo (set_color $prefix_col)$user_char (set_color $prefix_col)$common_char(set_color $middle_col)$common_char(set_color $suffix_col)$common_char$end_char
-
 end
+
+
 
 function fish_prompt -d 'Write out the left prompt of the dangerous theme'
 	echo -n -s (_secho_prompt)
