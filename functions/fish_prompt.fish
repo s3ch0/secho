@@ -13,8 +13,8 @@ function _secho_prompt
   if fish_is_root_user
     set user_char '#'
   end
-
   echo (set_color $prefix_col)$user_char (set_color $prefix_col)$common_char(set_color $middle_col)$common_char(set_color $suffix_col)$common_char$end_char
+
 end
 
 

@@ -1,14 +1,22 @@
 # +----------------+
 # | => PWD segment |
 # +----------------+
-function __secho_prompt_pwd -d 'Displays the present working directory'
-  set -l path_col 989898  # gray color
+function _secho_pwd -d 'Displays the present working directory'
+  #   set -l path_col 989898  # gray color
   set -l end_suffix "❮"
 
-  echo (set_color -i $path_col)(basename (pwd)) (set_color white)$end_suffix
+  echo (set_color -i white)(basename (pwd)) (set_color white)$end_suffix
 
 end
 
+function _secho_venv -d 'Displays the virtual environment'
+  set -l venv_col 989898  # gray color
+  if set -q VIRTUAL_ENV
+    echo -n -s (set_color -i $venv_col) "(" (basename "$VIRTUAL_ENV") ")" " ❮" (set_color normal) " "
+  end
+end
+
+# ::
 
 # +----------------+
 # | => Git segment |
@@ -54,6 +62,7 @@ end
 # +============================================================================+
 
 function fish_right_prompt -d 'Write out the right prompt of the secho theme'
-    echo -n -s (__secho_prompt_pwd)
+    echo -n -s (_secho_venv)
+    echo -n -s (_secho_pwd)
 	set_color normal
 end

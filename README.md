@@ -6,4 +6,10 @@
 ![](./secho.png)
 
 
+Several commands are provided to interact with this directory history:
+
+dirh prints the history
+cdh displays a prompt to quickly navigate the history
+prevd moves backward through the history. It is bound to Alt+←
+nextd moves forward through the history. It is bound to Alt+→
 

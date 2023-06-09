@@ -1,0 +1,11 @@
+  echo (set_color --bold red)    " Website List" (set_color normal)                
+	echo (set_color green)         "    |- https://github.com/zhouhaobusy     "
+	echo (set_color green)         "    |- oss://zhouhao-blog/blog/     "
+	echo (set_color green)         "    |- https://mirrors.aliyun.com/pypi/simple/  "
+	echo (set_color green)         "    |- http://127.0.0.1"
+	echo (set_color green)         "    |- http://localhost:8889/tree/Code/python/jupyter"
+	echo (set_color green)         "    |- https://jyywiki.cn/OS/2023/"
+	echo (set_color green)         "    |- https://github.com/ibraheemdev/modern-unix"
+	echo (set_color green)         "    |- http://172.245.154.33:8501"
+	echo (set_color green)         "    |- http://127.0.0.1:2017"
+	echo (set_color green)         "    |- https://172.20.1.1/wangdingbei/Login/login"
